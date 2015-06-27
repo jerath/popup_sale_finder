@@ -4,7 +4,7 @@
 }
 
 .default_image_div {
-  background-image: url("../images/garage.jpg");
+  background-image: url("../images/sale_1.jpg");
 }
 
 .map-canvas {
@@ -29,7 +29,7 @@
 
 #map {
   border-radius: 8px;
-  max-width: 785px;  
+  max-width: 785px;
   height: 350px;
   margin: auto;
   margin-bottom:30px;
@@ -42,7 +42,7 @@
 
 .add-new {
   width: 100%;
-  
+
 }
 
 .padding_left {
@@ -64,7 +64,7 @@
   margin-bottom: 60px;
   background-color: #5cb5d6;
   box-shadow: 10px 10px 5px #545454;
-  opacity:0.95; 
+  opacity:0.95;
   border-radius: 8px;
 }
 
@@ -164,9 +164,9 @@ footer {
 }
 
 
-body { 
-  font-family: 'Merriweather Sans', sans-serif; 
-  background: url("../images/cityblur10bw.jpg") no-repeat center center fixed; 
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  background: url("../images/cityblur10bw.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -179,12 +179,12 @@ body {
 
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: #000; 
+color: #000;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
-color: white; 
+color: white;
 background-color: #030033;
 }
 
@@ -196,16 +196,16 @@ background-color: #030033;
    .dropdown-menu > li > a:focus {
     color: #262626;
    text-decoration: none;
-  background-color: #66CCFF; 
+  background-color: #66CCFF;
    }
 
  .nav > li > a:hover,
  .nav > li > a:focus {
     text-decoration: none;
-    background-color: silver; 
+    background-color: silver;
   }
 
 
   .navbar-default .navbar-nav > li > a {
-   color: white; 
+   color: white;
     }
