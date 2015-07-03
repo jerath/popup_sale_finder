@@ -1,7 +1,7 @@
 ###Overview
-For our Lighthouse Labs midterm project, we made an app that helps people find pop-up shops like garage sales or farmers markets happening now in their area.
+For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters), we made an app that helps people find pop-up shops like garage sales or farmers markets happening now in their area.
 
-####This is a spin-off of that midterm project.
+#####This is a spin-off of that midterm project.
 
 ###Features
 * Search for pop-up sales based on user location
@@ -15,6 +15,9 @@ For our Lighthouse Labs midterm project, we made an app that helps people find p
 * Ability to edit all sales instead of most recent
 * Play with bootstrap
 * Ability to post and view future sales
+* Break up the create sale form into more usable chunks
+* Get user information from browser
+* **Sanitize user input to escape HTML**
 
 ###To run locally on vagrant
 1. `bundle install`
