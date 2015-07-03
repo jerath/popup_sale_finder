@@ -24,3 +24,5 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 2. `shotgun -p 3000 -o 0.0.0.0`
 3. Visit `http://localhost:3000/` in your browser
 4. `rake db:rebirth` to generate some test sales near Gastown, Vancouver
+
+#### Contributors: [Samson Wong](https://github.com/samwongson), [Robin Beechey](https://github.com/robinbeechey).
