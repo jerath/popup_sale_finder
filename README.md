@@ -4,20 +4,20 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 #####This is a spin-off of that midterm project.
 
 ###Features
-* Search for pop-up sales based on user location
-* See a map of all current sales near user
-* Browse all sales and see information like address, time, description, and image
-* Post and edit sales
+* Search for pop-up sales based on user location.
+* See a map of all current sales near user.
+* Browse all sales and see information like address, time, description, and image.
+* Post and edit sales.
 
 ###Wish List
 * Ability to reserve item can be set by sale creator, and if selected, reserving an item will sends a text to the sale owner.
-* Items that have been reserved are apparently
-* Ability to edit all sales instead of most recent
-* Play with bootstrap
-* Ability to post and view future sales
-* Break up the create sale form into more usable chunks
-* Get user information from browser
-* **Sanitize user input to escape HTML**
+* It should be apparent to all users that an item is reserved.
+* Ability to edit all sales instead of most recent.
+* Play with bootstrap.
+* Ability to post and view future sales.
+* Break up the create sale form into more usable chunks.
+* Get user information from browser.
+* **Sanitize user input to escape HTML.**
 
 ###To run locally on vagrant
 1. `bundle install`
