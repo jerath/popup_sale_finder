@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'pry' if development?
 
 require 'active_support/all'
 
