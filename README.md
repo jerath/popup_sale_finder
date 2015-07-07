@@ -17,6 +17,7 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Ability to edit all sales instead of most recent.
 * Play with bootstrap.
 * Ability to post and view future sales.
+* Upload picture from camera
 * Image scale maintain proportion
 * Break up the create sale form into more usable chunks.
 
