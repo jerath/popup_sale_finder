@@ -39,49 +39,9 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
-  <!-- END MAP GENERATE -->
 
-  <!-- COUNTDOWN TIMER (SALES/SHOW) -->
-  <!--
-  <script type="text/javascript">
-  var interval;
-      var minutes = 1;
-      var seconds = 10;
-
-      // window.onload = function() {
-      //     countdown('countdown');
-      // }
-
-      $(document).on('click', '.btn', function countdown() {
-          var element = 'countdown' + $(this).data('number').toString();
-          interval = setInterval(function() {
-              var el = document.getElementById(element);
-              if(seconds == 0) {
-                  if(minutes == 0) {
-                      alert(el.innerHTML = "countdown's over!");
-                      clearInterval(interval);
-                      return;
-                  } else {
-                      minutes--;
-                      seconds = 60;
-                  }
-              }
-              if(minutes > 0) {
-                  var minute_text = minutes + (minutes > 1 ? ' minutes' : ' minute');
-              } else {
-                  var minute_text = '';
-              }
-              var second_text = seconds > 1 ? 'seconds' : 'second';
-              el.innerHTML = minute_text + ' ' + seconds + ' ' + second_text;
-              seconds--;
-          }, 1000);
-      });
-  </script>
--->
-
-<!-- END COUNTDOWN TIMER -->
-
-<title>Rummagr</title>
+<title>Rummagr
+</title>
 </head>
 <body>
 
@@ -90,7 +50,7 @@
     <div class="container">
       <div class="navbar-header">
 
-        <a href="/" class="navbar-brand"><i class="glyphicon glyphicon-home"></i> Junkr</a>
+        <a href="/" class="navbar-brand"><i class="glyphicon glyphicon-home"></i> Rummagr</a>
 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>

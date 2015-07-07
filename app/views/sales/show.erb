@@ -9,11 +9,7 @@
       <p><%= @sale.start_time.to_date %></p>
       <p><%= to_12_hour_time(@sale.start_time) %> - <%= to_12_hour_time(@sale.end_time) %></p>
       <h4><%= @sale.description %></h4>
-      <!-- <% counter = 0 %> -->
       <% @sale.items.each do |item| %>
-
-        <!-- <li><%= item.item_name %> <a data-number='<%= counter %>' href='#' class="btn btn-success btn-xs">Reserve</a><br><span id='countdown<%= counter %>'></span></li>
-        <% counter += 1 %> -->
         <li><%= item.item_name %>
       <% end %>
 
