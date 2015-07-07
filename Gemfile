@@ -11,7 +11,6 @@ gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
 gem 'geocoder'
 
-
 gem 'puma'
 gem 'tux'
 
@@ -23,4 +22,4 @@ end
 
 group :production do
   gem 'pg'
-end	
+end

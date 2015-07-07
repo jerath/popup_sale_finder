@@ -1,7 +1,6 @@
 # Homepage (Root path)
 # DEFAULT_LOCATION = "125 W Hastings, Vancouver"
 # DEFAULT_SEARCH_RADIUS = 10
-
 helpers do
 
   def to_12_hour_time(date_time)
@@ -131,7 +130,6 @@ end
 
 
 get '/sales/edit' do
-  # binding.pry
   @logged_in = session[:user_id]
   @sale = Sale.where("user_id = ?", @logged_in)
 

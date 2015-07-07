@@ -12,7 +12,6 @@ require 'carrierwave/orm/activerecord'
 require 'rmagick'
 require 'bcrypt'
 require 'geocoder'
-
 require_relative '../app/uploaders/image_uploader'
 
 # require 'pry' # can't deploy with this
