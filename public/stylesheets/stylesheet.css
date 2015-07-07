@@ -2,7 +2,9 @@
 /* 4ECDC4 - blue
 C7F464 - apple green
 FF6B6B - cheery pink
-C44D58 - maroon*/
+C44D58 - maroon
+18bc9c - original freelancer colour
+*/
 
 .map-canvas {
     height: 350px;
@@ -31,5 +33,12 @@ C44D58 - maroon*/
 }
 
 #footer{
-  height: 50px;
+  height: 30px;
+}
+
+.details-container {
+  border-radius: 8px;
+  margin-top: 45px;
+  padding: 30px 40px 30px 40px;
+  background-color: #C7F464;
 }

@@ -1,6 +1,3 @@
-<h1>Post a sale</h1>
-
-
 <div class="container">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
@@ -14,60 +11,62 @@
           </ul>
         </div>
       <% end %>
-      <div> <h1>Important details</h1></div>
-      <form data-toggle="validator" role="form" method="post" enctype="multipart/form-data" action="/sales">
-        <div>
-          <label>Address:</label>
-          <input type="text" class="form-control" value="<%= @sale.address %>" name="address"  placeholder="123 Street, City" required>
-        </div>
+      <div class='details-container'>
+        <div> <h1>Important details</h1></div>
+        <form data-toggle="validator" role="form" method="post" enctype="multipart/form-data" action="/sales">
+          <div>
+            <label>Address:</label>
+            <input type="text" class="form-control" value="<%= @sale.address %>" name="address"  placeholder="123 Street, City" required>
+          </div>
 
-        <div>
-          <label>Start time:</label>
-          <input type="time" class="form-control" value="<%= @sale.start_time %>" name="start_time" required >
-        </div>
+          <div>
+            <label>Start time:</label>
+            <input type="time" class="form-control" value="<%= @sale.start_time %>" name="start_time" required >
+          </div>
 
-        <div>
-          <label>End time:</label>
-          <input type="time" class="form-control" value="<%= @sale.end_time %>" name="end_time" required >
-        </div>
+          <div>
+            <label>End time:</label>
+            <input type="time" class="form-control" value="<%= @sale.end_time %>" name="end_time" required >
+          </div>
 
-        <div>
-          <label>Description:</label>
-          <input type="text" class="form-control" value="<%= @sale.description %>" name="description" placeholder="Moving sale, farmers market, lemonade stand..." required>
-        </div>
+          <div>
+            <label>Description:</label>
+            <input type="text" class="form-control" value="<%= @sale.description %>" name="description" placeholder="Moving sale, farmers market, lemonade stand..." required>
+          </div>
 
-        <div>
-          <label>Upload image:</label>
-          <input type="file" class="form-control" value="<%= @sale.image_path %>" name="image_path" placeholder="show your junk!">
-        </div>
+          <div>
+            <label>Upload image (optional):</label>
+            <input type="file" class="form-control" value="<%= @sale.image_path %>" name="image_path" placeholder="show your junk!">
+          </div>
 
-        <div> <h1>Optional</h1></div>
-        <div>
-          <label>Item 1:</label>
-          <input type ="text" class="form-control" value="<%=  %>" name="item_name1" placeholder="Big ticket item" maxlength="40">
-        </div>
+          <div> <h1>Optional</h1></div>
+          <div>
+            <label>Item 1:</label>
+            <input type ="text" class="form-control" value="<%=  %>" name="item_name1" placeholder="Big ticket item" maxlength="40">
+          </div>
 
-        <div>
-          <label>Item 2:</label>
-          <input type ="text" class="form-control" value="<%=  %>" name="item_name2" placeholder="Big ticket item"  maxlength="40">
-        </div>
+          <div>
+            <label>Item 2:</label>
+            <input type ="text" class="form-control" value="<%=  %>" name="item_name2" placeholder="Big ticket item"  maxlength="40">
+          </div>
 
-        <div>
-          <label>Item 3:</label>
-          <input type ="text" class="form-control" value="<%=  %>" name="item_name3" placeholder="Big ticket item"  maxlength="40">
-        </div>
+          <div>
+            <label>Item 3:</label>
+            <input type ="text" class="form-control" value="<%=  %>" name="item_name3" placeholder="Big ticket item"  maxlength="40">
+          </div>
 
-        <div>
-          <label>Item 4:</label>
-          <input type ="text" class="form-control" value="<%=  %>" name="item_name4" placeholder="Big ticket item"  maxlength="40" >
-        </div>
+          <div>
+            <label>Item 4:</label>
+            <input type ="text" class="form-control" value="<%=  %>" name="item_name4" placeholder="Big ticket item"  maxlength="40" >
+          </div>
 
-        <div>
-          <label>Item 5:</label>
-          <input type ="text" class="form-control" value="<%=  %>" name="item_name5" placeholder="Big ticket item"  maxlength="40" >
-        </div>
-        <input class="add-new btn btn-primary salesubmit" name="salesubmit" type="submit" value="Submit" >
-      </form>
+          <div>
+            <label>Item 5:</label>
+            <input type ="text" class="form-control" value="<%=  %>" name="item_name5" placeholder="Big ticket item"  maxlength="40" >
+          </div>
+          <input class="add-new btn btn-primary salesubmit" name="salesubmit" type="submit" value="Submit" >
+        </form>
+      </div>
     </div>
   </div>
 </div>

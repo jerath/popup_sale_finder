@@ -18,8 +18,8 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Play with bootstrap.
 * Ability to post and view future sales.
 * Image scale maintain proportion (display by width)
-* Break up the create sale form into more usable chunks.
-* Prettify the dates
+* ~~Break up the create sale form into more usable chunks.~~
+* Draggable pin on map (perhaps instead of new "where you at?")
 
 ###To run locally on vagrant
 1. `bundle install`
