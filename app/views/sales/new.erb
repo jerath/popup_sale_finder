@@ -14,6 +14,7 @@
           </ul>
         </div>
       <% end %>
+      <div> <h1>Important details</h1></div>
       <form data-toggle="validator" role="form" method="post" enctype="multipart/form-data" action="/sales">
         <div>
           <label>Address:</label>
@@ -32,7 +33,7 @@
 
         <div>
           <label>Description:</label>
-          <input type="text" class="form-control" value="<%= @sale.description %>" name="description" placeholder="Describe your junk!" required>
+          <input type="text" class="form-control" value="<%= @sale.description %>" name="description" placeholder="Moving sale, farmers market, lemonade stand..." required>
         </div>
 
         <div>
@@ -40,6 +41,7 @@
           <input type="file" class="form-control" value="<%= @sale.image_path %>" name="image_path" placeholder="show your junk!">
         </div>
 
+        <div> <h1>Optional</h1></div>
         <div>
           <label>Item 1:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name1" placeholder="Big ticket item" maxlength="40">
