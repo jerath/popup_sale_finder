@@ -19,6 +19,7 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Ability to post and view future sales.
 * Image scale maintain proportion (display by width)
 * Break up the create sale form into more usable chunks.
+* Prettify the dates
 
 ###To run locally on vagrant
 1. `bundle install`

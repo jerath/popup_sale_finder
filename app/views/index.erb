@@ -1,7 +1,7 @@
 <h1 class="title">Junkr</h1>
 
 <!-- CLUSTER MAP -->
-  
+
  <div id="map"></div>
 
   <script type="text/javascript">
@@ -22,7 +22,7 @@
 
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) {  
+    for (i = 0; i < locations.length; i++) {
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
@@ -63,22 +63,26 @@
       </form>
     </div>
   </div>
-  
+
   <!-- TODO I don't remember why this is here but I'm scared we'll find out why later. -->
   <% if @sales.empty? %>
     <div class="col-md-6 col-md-offset-3">
       <h4 class="explain"> There are no sales in your area. </h4>
     </div>
-  <% else %> 
-   
-    <% @sales.each do |sale| %>    
+  <% else %>
+
+    <% @sales.each do |sale| %>
       <div class="padding_bottom row">
         <div class="topbar col-md-10 col-md-offset-1">
-          <a class="address" href='/sales/<%= sale.id %>'><%= sale.address %> about <%= '%.2f' % sale.distance %>km away.</a>
+
+        </div>
+        <div class="post-photo col-md-5" >
+          <img src="<%= sale.image_path %>">
         </div>
 
-        <div class="post col-xs-4 col-md-2 col-md-offset-1">
-          <p><%= sale.start_time.to_date %></p>
+        <div class="post col-md-4 col-md-offset-1">
+          <!-- <p><%= sale.start_time.to_date %></p> -->
+          <a class="address" href='/sales/<%= sale.id %>'><%= sale.address %> about <%= '%.1f' % sale.distance %>km away.</a>
           <p><%= to_12_hour_time(sale.start_time) %> - <%= to_12_hour_time(sale.end_time) %></p>
 
           <h4><%= sale.description %></h4>
@@ -87,17 +91,12 @@
           <% end %>
           <% if current_user && current_user.id == sale.user_id %>
             <a class="btn btn-danger" href='/sales/edit'>Edit</a>
-          <% end %>          
+          <% end %>
         </div>
 
-        <div data-latitude='<%= sale.latitude%>' data-longitude='<%= sale.longitude%>' class="map-canvas col-md-3 col-md-offset-0">maps!!</div>
+        <!-- <div data-latitude='<%= sale.latitude%>' data-longitude='<%= sale.longitude%>' class="map-canvas col-md-3 col-md-offset-0">maps!!</div> -->
 
-        <div class="photo col-md-5" >
-          <img class="picture" src="<%= sale.image_path %>">
-        </div>
-      </div>   
+      </div>
     <% end %>
   <% end %>
 </div>
-
-

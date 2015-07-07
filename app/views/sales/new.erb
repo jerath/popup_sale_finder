@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="new_form col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
       <% if @sale && @sale.errors.any? %>
         <div>
           <h4><strong>Some issues with your sale, please fix them:</strong></h4>
@@ -13,8 +13,7 @@
             <% end %>
           </ul>
         </div>
-      <% end %> 
-  
+      <% end %>
       <form data-toggle="validator" role="form" method="post" enctype="multipart/form-data" action="/sales">
         <div>
           <label>Address:</label>
@@ -42,29 +41,29 @@
         </div>
 
         <div>
-          <label>Item 1:</label> 
+          <label>Item 1:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name1" placeholder="Big ticket item" maxlength="40">
         </div>
 
         <div>
-          <label>Item 2:</label> 
+          <label>Item 2:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name2" placeholder="Big ticket item"  maxlength="40">
         </div>
 
         <div>
-          <label>Item 3:</label> 
+          <label>Item 3:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name3" placeholder="Big ticket item"  maxlength="40">
         </div>
 
         <div>
-          <label>Item 4:</label> 
+          <label>Item 4:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name4" placeholder="Big ticket item"  maxlength="40" >
         </div>
 
         <div>
-          <label>Item 5:</label> 
+          <label>Item 5:</label>
           <input type ="text" class="form-control" value="<%=  %>" name="item_name5" placeholder="Big ticket item"  maxlength="40" >
-        </div>  
+        </div>
         <input class="add-new btn btn-primary salesubmit" name="salesubmit" type="submit" value="Submit" >
       </form>
     </div>
