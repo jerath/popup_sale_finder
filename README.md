@@ -17,7 +17,7 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Ability to edit all sales instead of most recent.
 * Play with bootstrap.
 * Ability to post and view future sales.
-* Image scale maintain proportion
+* Image scale maintain proportion (display by width)
 * Break up the create sale form into more usable chunks.
 
 ###To run locally on vagrant
