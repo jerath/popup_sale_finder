@@ -92,6 +92,7 @@ post '/session_location' do
   end
 end
 
+
 get '/sales/new' do
   @sale = Sale.new()
   erb :'/sales/new'
