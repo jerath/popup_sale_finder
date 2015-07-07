@@ -2,9 +2,6 @@ configure do
   # Log queries to STDOUT in development
   if Sinatra::Application.development?
     ActiveRecord::Base.logger = Logger.new(STDOUT)
-  end
-
-  if development?
     set :database, {
       adapter: "sqlite3",
       database: "db/db.sqlite3"
