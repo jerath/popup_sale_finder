@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'pry' if development?
+require 'pry' if Sinatra::Application.development?
 
 require 'active_support/all'
 
