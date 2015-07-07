@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'pry' if Sinatra::Application.development?
-
 require 'active_support/all'
 
 # Load Sinatra Framework (with AR)
