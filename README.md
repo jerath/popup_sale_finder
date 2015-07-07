@@ -19,9 +19,6 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Ability to post and view future sales.
 * Image scale maintain proportion
 * Break up the create sale form into more usable chunks.
-* ~~**Comment out reserve buttons until they work**~~
-* Ability to reserve item can be set by sale creator, and if selected, reserving an item will sends a text to the sale owner.
-* It should be apparent to all users that an item is reserved.
 
 ###To run locally on vagrant
 1. `bundle install`
