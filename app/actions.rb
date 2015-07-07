@@ -2,7 +2,7 @@
 # DEFAULT_LOCATION = "125 W Hastings, Vancouver"
 # DEFAULT_SEARCH_RADIUS = 10
 
-helpers do 
+helpers do
 
   def to_12_hour_time(date_time)
     date_time.in_time_zone('US/Pacific').strftime("%l:%M %P").strip
@@ -35,10 +35,9 @@ helpers do
   end
 
   def user_has_sale
-    binding.pry
     Sale.find(session[:user_id]).id
   end
-  
+
   def get_map_data
     @map_data = []
     sales = get_close_sales(get_current_sales)
@@ -60,12 +59,12 @@ end
 
 
 get '/' do
-  if session[:location] 
+  if session[:location]
     # @sales = get_sales_by_time
     # show all sales.
 
     @sales = get_close_sales(get_current_sales)
-    @items = Item.all 
+    @items = Item.all
     erb :index
   else
     # request location
@@ -125,7 +124,7 @@ post '/sales' do
       end
     end
     redirect '/'
-  else 
+  else
     erb :'/sales/new'
   end
 end
@@ -135,13 +134,13 @@ get '/sales/edit' do
   # binding.pry
   @logged_in = session[:user_id]
   @sale = Sale.where("user_id = ?", @logged_in)
-   
+
   if !@sale.empty?
     erb :'sales/edit'
-  else 
+  else
     redirect '/'
   end
-  
+
 end
 
 
@@ -161,10 +160,10 @@ post '/sales/edit' do
       item = Item.find(params_item[:id])
       item.item_name = params_item[:item_name]
       item.save
-    end         
+    end
     redirect '/'
-  else 
-    erb :'/sales/edit'  
+  else
+    erb :'/sales/edit'
   end
 end
 
@@ -236,4 +235,3 @@ get '/sales/:id' do
   @sale = Sale.find(params[:id])
   erb :'sales/show'
 end
-
