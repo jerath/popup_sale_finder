@@ -10,14 +10,17 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Post and edit sales.
 
 ###Wish List
-* Ability to reserve item can be set by sale creator, and if selected, reserving an item will sends a text to the sale owner.
-* It should be apparent to all users that an item is reserved.
+* **Sanitize user input to escape HTML.**
+* Get location from browser.
+* Register - require password
+* Login - make it actually work instead of "that user already exists"
 * Ability to edit all sales instead of most recent.
 * Play with bootstrap.
 * Ability to post and view future sales.
 * Break up the create sale form into more usable chunks.
-* Get user information from browser.
-* **Sanitize user input to escape HTML.**
+* **Comment out reserve buttons until they work**
+* Ability to reserve item can be set by sale creator, and if selected, reserving an item will sends a text to the sale owner.
+* It should be apparent to all users that an item is reserved.
 
 ###To run locally on vagrant
 1. `bundle install`
