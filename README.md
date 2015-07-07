@@ -10,7 +10,7 @@ For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters
 * Post and edit sales.
 
 ###Wish List
-* **Sanitize user input to escape HTML.**
+* ~~**Sanitize user input to escape HTML.**~~
 * Get location from browser.
 * Register - require password
 * Login - make it actually work instead of "that user already exists"
