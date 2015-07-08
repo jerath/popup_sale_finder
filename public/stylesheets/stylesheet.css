@@ -5,6 +5,9 @@ FF6B6B - cheery pink
 C44D58 - maroon
 18bc9c - original freelancer colour
 */
+body {
+  background-color: #4ECDC4;
+}
 
 .map-canvas {
     height: 350px;
@@ -12,20 +15,23 @@ C44D58 - maroon
   }
 
 #map {
-  /*border-radius: 8px;*/
-  max-width: 785px;
   height: 350px;
   margin: auto;
+  margin-top: 60px;
   margin-bottom:30px;
 }
 
-.post-photo img {
+.post-photo {
   width: 500px;
+  margin-bottom: 10px;
   height: auto;
 }
 
 .post-container {
-  width: 1000px;
+  border: 3px solid #ECECEC;
+  background-color:white;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 .form-control {
@@ -37,8 +43,24 @@ C44D58 - maroon
 }
 
 .details-container {
-  border-radius: 8px;
   margin-top: 45px;
   padding: 30px 40px 30px 40px;
-  background-color: #C7F464;
+  background-color: white;
+}
+
+.address {
+  font-size: 1.5em;
+}
+.distance {
+  color: #969696;
+}
+.description {
+  font-size: 1.5em;
+}
+.item{
+  font-size: 1.25em;
+  list-style-type: none;
+}
+.event-time {
+    font-size: 2.5em;
 }

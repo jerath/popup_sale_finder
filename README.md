@@ -1,7 +1,7 @@
 ###Overview
 For our [Lighthouse Labs midterm project](https://github.com/jerath/junk-hunters), we made an app that helps people find pop-up shops like garage sales or farmers markets happening now in their area.
 
-#####This is a spin-off of that midterm project.
+#####This is a spin-off of that midterm project, available at http://rummagr.herokuapp.com/
 
 ###Features
 * Search for pop-up sales based on user location.
