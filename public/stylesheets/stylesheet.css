@@ -64,5 +64,6 @@ body {
   /*list-style-type: none;*/
 }
 .event-time {
+  margin-top: 5px;
   font-size: 2em;
 }
